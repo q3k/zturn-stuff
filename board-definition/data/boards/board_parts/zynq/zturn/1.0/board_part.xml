@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<board_part board_name="ZTurn_7010" board_revision="a" board_part="part0" schema_version="1.0" vendor="myir.com" version="1.0">
+
+  <part_info part_name="xc7z010clg400-1" device="xc7z010" family="zynq" jtag_position="1" package="clg400" silicon_version="1.0" speed_grade="-1"/>
+
+  <board_info description="ZTurn 7010 Board" display_name="ZTurn 7010 Board" url="http://www.myir.com"/>
+
+  <interfaces>
+    <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0">
+      <preset_file name="ps7.tcl"/>
+    </interface>
+  </interfaces>
+
+  <ports/>
+
+</board_part>
