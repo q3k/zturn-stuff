@@ -1,5 +1,5 @@
-Various Files for MYiR ZTurn Board
-==================================
+Various Files for MYiR Z-turn Board
+===================================
 
 Information
 -----------
@@ -7,12 +7,22 @@ Information
 Contents:
 
  - I/O constraints file (`constraints/`)
- - board definitions and autmation (`board-definition/`), drop in `Xilinx/Vivado/2014.4`
+ - board definitions and autmation (`board-definition/`), drop in `Xilinx/Vivado/<version>/`
+
+References
+----------
+
+ * [Z-turn Product Page](http://www.myirtech.com/list.asp?id=502)
+ * [Z-turn Manuals, Schematics & Example designs]()
+ * [Z-turn Wiki](https://wiki.hackerspace.pl/projects:zturn-hackers) (inofficial, Warsaw Hackerspace)
+ * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net, inofficial, [statistics](https://dev.0l.dn42/irc/zynq/)
+ * [Adam Taylors Microzed Cronicles](http://git.io/vtRGd)
 
 License
 -------
 
 Copyright (c) 2015, Sergiusz 'q3k' Bazański <q3k@q3k.org>
+Copyright (c) 2015, Steffen 'stv0g' Vogel <stv0g@0l.de>
 
 All rights reserved.
 
