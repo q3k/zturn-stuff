@@ -13,7 +13,7 @@ References
 ----------
 
  * [Z-turn Product Page](http://www.myirtech.com/list.asp?id=502)
- * [Z-turn Manuals, Schematics & Example designs]()
+ * [Z-turn Manuals, Schematics & Example designs](https://rwth-aachen.sciebo.de/public.php?service=files&t=f030d08ff42ee4faefcd63dc32e104bc)
  * [Z-turn Wiki](https://wiki.hackerspace.pl/projects:zturn-hackers) (inofficial, Warsaw Hackerspace)
  * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net, inofficial, [statistics](https://dev.0l.dn42/irc/zynq/)
  * [Adam Taylors Microzed Cronicles](http://git.io/vtRGd)
