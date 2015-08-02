@@ -10,7 +10,7 @@
 
 <board schema_version="2.0"
 	vendor="myir.com"
-	name="mys-7z010"
+	name="mys-7z020"
 	display_name="Z-turn (MYS-7Z020-C)"
 	url="http://www.myirtech.com/list.asp?id=502"
 	preset_file="preset.xml">
