@@ -1,16 +1,27 @@
-Various Files for MYiR Z-turn Board
-===================================
+# Various Files & Examples for MYiR Z-turn Board
 
-Information
------------
+## Contents
 
-Contents:
+This repository contains:
 
- - I/O constraints file (`constraints/`)
- - board definitions and autmation (`board-definition/`), drop in `Xilinx/Vivado/<version>/`
+ 1. I/O constraints file (`constraints/`)
+ 2. board definitions and autmation (`board-definition/`), drop in `Xilinx/Vivado/<version>/`
 
-References
-----------
+## Installing
+
+For instructions on how to install the board definition files, the following wiki page can be used.
+
+https://reference.digilentinc.com/vivado:boardfiles2015
+
+Alternatively, you can add the following line to your Vivado init script (`~/.Xilinx/Vivado/init.tcl`):
+
+```tcl
+set_param board.repoPaths [list “<path_to_repo>/board-definition/data/boards/board_files”]
+```
+
+For a full description of the board definition XML schemas, please consult UG895, Appendix A *Board Interface File*.
+
+## References & Links
 
  * [Z-turn Product Page](http://www.myirtech.com/list.asp?id=502)
  * [Z-turn Manuals, Schematics & Example designs](https://rwth-aachen.sciebo.de/public.php?service=files&t=f030d08ff42ee4faefcd63dc32e104bc)
@@ -18,11 +29,10 @@ References
  * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net, inofficial, [statistics](https://dev.0l.dn42/irc/zynq/)
  * [Adam Taylors Microzed Cronicles](http://git.io/vtRGd)
 
-License
--------
+## License
 
 Copyright (c) 2015, Sergiusz 'q3k' Bazański <q3k@q3k.org>
-Copyright (c) 2015, Steffen 'stv0g' Vogel <stv0g@0l.de>
+Copyright (c) 2015-2016, Steffen 'stv0g' Vogel <stv0g@0l.de>
 
 All rights reserved.
 
