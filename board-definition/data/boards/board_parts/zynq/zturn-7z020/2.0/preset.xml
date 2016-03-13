@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?><!--
 ################################################################################
 # 
-#  MYiR ZTurn Zynq 7010 Board Definition File
+#  MYiR Z-turn Board IP Presets
 #
 #  Sergiusz 'q3k' Bazański <q3k@q3k.org>
 #  Steffen 'stv0g' Vogel <stv0g@0l.de>
@@ -9,7 +9,7 @@
 ################################################################################-->
 
 <ip_presets schema="1.0">
-  <ip_preset preset_proc_name="ps7_preset"> 
+	<ip_preset preset_proc_name="ps7_preset"> 
     <ip vendor="xilinx.com" library="ip" name="processing_system7" version="*"> 
       <user_parameters>
     <!--########################################################################
@@ -270,20 +270,55 @@
      </user_parameters>
     </ip>
   </ip_preset>
-
-<!--  <ip_preset preset_proc_name="rgb_led_preset">
-    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
-        <user_parameters>
-          <user_parameter name="CONFIG.C_GPIO_WIDTH" value="3"/> 
-          <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
-        </user_parameters>
-    </ip>
-    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
-        <user_parameters>
-          <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
-          <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="8"/> 
-          <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
-        </user_parameters>
-    </ip>
-  </ip_preset> -->
+	<ip_preset preset_proc_name="rgb_led_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="3"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/>
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="3"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0"/> 
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	<ip_preset preset_proc_name="buzzer_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="1"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/>
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="1"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0"/> 
+			</user_parameters>
+		</ip>
+	</ip_preset>
+	<ip_preset preset_proc_name="sws_4bits_preset">
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS" value="0"/>
+			</user_parameters>
+		</ip>
+		<ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+			<user_parameters>
+				<user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+				<user_parameter name="CONFIG.C_GPIO2_WIDTH" value="4"/> 
+				<user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="0"/> 
+				<user_parameter name="CONFIG.C_ALL_INPUTS_2" value="1"/> 
+			</user_parameters>
+		</ip>
+	</ip_preset>
 </ip_presets>

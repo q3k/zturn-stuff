@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
 ################################################################################
 #
-#  MYiR ZTurn Zynq 7010 Pin Definition File
+#  MYiR Z-turn FPGA Pin Definition File
 #
 #  Sergiusz 'q3k' Bazański <q3k@q3k.org>
 #  Steffen 'stv0g' Vogel <stv0g@0l.de>
@@ -18,8 +18,9 @@
 		<pin index="5"  name="rgb_led_tri_o_1"   iostandard="LVCMOS33" loc="Y16" /><!-- IO_B34_LP7 -->
 		<pin index="6"  name="rgb_led_tri_o_2"   iostandard="LVCMOS33" loc="Y17" /><!-- IO_B34_LN7 -->
 		<pin index="7"  name="buzzer_tri_o_0"    iostandard="LVCMOS33" loc="P18" /><!-- BP         -->
-		<pin index="8"  name="i2c0_sda"          iostandard="LVCMOS33" loc="P15" /><!-- I2C0_SDA   -->
-		<pin index="9"  name="i2c0_scl"          iostandard="LVCMOS33" loc="P16" /><!-- I2C0_SCL   -->
-		<pin index="10" name="mems_intn"         iostandard="LVCMOS33" loc="P18" /><!-- MEMS_INTn  -->
+	        <pin index="8"  name ="i2c0_scl_i"       iostandard="LVCMOS33" loc="P16" /><!-- I2C0_SCL   -->
+	        <pin index="9"  name ="i2c0_sda_i"       iostandard="LVCMOS33" loc="P15" /><!-- I2C0_SDA   -->
+		<pin index="10" name="mems_temp_intn"    iostandard="LVCMOS33" loc="N17" /><!-- MEMS_INTn  (wired-or for LM75 and Sil902x)-->
+		<pin index="11" name="hdmi_int"          iostandard="LVCMOS33" loc="W19" /><!-- HDMI_INT  -->
 	</pins>
 </part_info>
