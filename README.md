@@ -31,8 +31,8 @@ For a full description of the board definition XML schemas, please consult UG895
 
 ## License
 
-Copyright (c) 2015, Sergiusz 'q3k' Bazański <q3k@q3k.org>
-Copyright (c) 2015-2016, Steffen 'stv0g' Vogel <stv0g@0l.de>
+- Copyright (c) 2015, Sergiusz 'q3k' Bazański <q3k@q3k.org>
+- Copyright (c) 2015-2016, Steffen 'stv0g' Vogel <stv0g@0l.de>
 
 All rights reserved.
 
