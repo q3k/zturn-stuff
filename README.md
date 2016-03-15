@@ -5,9 +5,10 @@
 This repository contains:
 
  1. I/O constraints file (`constraints/`)
- 2. Board interface definition and autmation (`board-definition/`)
+ 2. Board interface definition and autmation (`boards/`)
  3. KiCAD Pmod Adapter Board (`pmod-cape/`)
- 4. SDSoC Platform definition (`sdsoc-platform/`)
+ 4. SDSoC Platform definition (`sdsoc/`)
+ 5. Some simple Vivado examples (`examples/`)
 
 ## Installing
 
@@ -18,7 +19,7 @@ https://reference.digilentinc.com/vivado:boardfiles2015
 Alternatively, you can add the following line to your Vivado init script (`~/.Xilinx/Vivado/init.tcl`):
 
 ```tcl
-set_param board.repoPaths [list “<path_to_repo>/board-definition/data/boards/board_files”]
+set_param board.repoPaths [list “<path_to_repo>/boards/board_files”]
 ```
 
 For a full description of the board definition XML schemas, please consult UG895, Appendix A *Board Interface File*.
