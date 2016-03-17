@@ -31,7 +31,7 @@ For a full description of the board definition XML schemas, please consult UG895
  * [Z-turn Product Page](http://www.myirtech.com/list.asp?id=502)
  * [Z-turn Manuals, Schematics & Example designs](https://rwth-aachen.sciebo.de/public.php?service=files&t=f030d08ff42ee4faefcd63dc32e104bc), [new version](http://115.28.165.193/z-turn/Z-TURN_V10_20150909.iso)
  * [Z-turn Wiki](https://wiki.hackerspace.pl/projects:zturn-hackers) (inofficial, Warsaw Hackerspace)
- * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net, inofficial, [statistics](https://dev.0l.dn42/irc/zynq/)
+ * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net (inofficial, [statistics](https://dev.0l.dn42/irc/zynq/), [webchat](http://webchat.freenode.net?channels=%23%23zynq))
  * [Adam Taylors Microzed Cronicles](http://git.io/vtRGd)
 
 ## License
