@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1263262 Tue Jun 23 17:59:39 MDT 2015
+| Date         : Fri Jul 10 13:44:23 2015
+| Host         : Mitch-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'z_turn_xlconcat_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of z_turn_xlconcat_0_1 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to current project options.
+

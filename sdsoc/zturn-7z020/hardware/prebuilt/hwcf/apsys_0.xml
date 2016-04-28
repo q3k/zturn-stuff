@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<cf:model cf:partition="0" cf:prefix="_p0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_mmult">
+    <cf:port cf:name="cmd_mmult" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="A" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="B" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="C" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:block cf:name="swblk_mmult">
+    <cf:port cf:name="cmd_mmult" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="A" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="B" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="C" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:comp cf:name="datamover_0" xd:componentRef="axi_dma" xd:clockId="2"/>
+  <cf:comp cf:name="datamover_1" xd:componentRef="axi_dma" xd:clockId="2"/>
+  <cf:comp cf:name="datamover_2" xd:componentRef="axi_dma" xd:clockId="2"/>
+  <cf:comp cf:name="z_turn20" xd:componentRef="z_turn20" xd:clockId="2"/>
+  <cf:comp cf:name="mmult_0" xd:componentRef="mmult" xd:clockId="3"/>
+  <cf:instance cf:name="hwinst_mmult_0" cf:blockName="hwblk_mmult" cf:compName="mmult_0">
+    <cf:portMap cf:blockPort="cmd_mmult" cf:compPort="ap_ctrl" xd:register="0x28"/>
+    <cf:portMap cf:blockPort="A" cf:compPort="A"/>
+    <cf:portMap cf:blockPort="B" cf:compPort="B"/>
+    <cf:portMap cf:blockPort="C" cf:compPort="C"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_mmult_0" cf:blockName="swblk_mmult" cf:compName="z_turn20">
+    <cf:portMap cf:blockPort="cmd_mmult" cf:compPort="M_AXI_GP1"/>
+    <cf:portMap cf:blockPort="A" cf:compPort="S_AXI_ACP"/>
+    <cf:portMap cf:blockPort="B" cf:compPort="S_AXI_ACP"/>
+    <cf:portMap cf:blockPort="C" cf:compPort="S_AXI_ACP"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_mmult_0" cf:srcPort="cmd_mmult" cf:dstInst="hwinst_mmult_0" cf:dstPort="cmd_mmult">
+    <cf:dataMover cf:compName="z_turn20" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mmult_0" cf:srcPort="A" cf:dstInst="hwinst_mmult_0" cf:dstPort="A">
+    <cf:dataMover cf:compName="datamover_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_mmult_0" cf:srcPort="B" cf:dstInst="hwinst_mmult_0" cf:dstPort="B">
+    <cf:dataMover cf:compName="datamover_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_mmult_0" cf:srcPort="C" cf:dstInst="swinst_mmult_0" cf:dstPort="C">
+    <cf:dataMover cf:compName="datamover_2" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+</cf:model>
