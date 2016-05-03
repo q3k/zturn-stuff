@@ -7,7 +7,7 @@
 This repository contains:
 
  1. I/O constraints file (`constraints/`)
- 2. Board interface definition and autmation (`boards/`)
+ 2. Board interface definition and automation (`boards/`)
  3. KiCAD Pmod Adapter Board (`pmod-cape/`)
  4. SDSoC Platform definition (`sdsoc/`)
  5. Some simple Vivado examples (`examples/`)
@@ -30,14 +30,15 @@ For a full description of the board definition XML schemas, please consult UG895
 
  * [Z-turn Product Page](http://www.myirtech.com/list.asp?id=502)
  * [Z-turn Manuals, Schematics & Example designs](https://rwth-aachen.sciebo.de/index.php/s/f030d08ff42ee4faefcd63dc32e104bc), [new version](https://rwth-aachen.sciebo.de/index.php/s/MCzrMyyzyvRlRce)
- * [Z-turn Wiki](https://wiki.hackerspace.pl/projects:zturn-hackers) (inofficial, Warsaw Hackerspace)
+ * [Z-turn Wiki](https://wiki.hackerspace.pl/projects:zturn-hackers) (unofficial, Warsaw Hackerspace)
  * [Zynq Channel](irc://##zynq@irc.freenode.net): ##zynq on freenode.net (inofficial, [statistics](https://dev.0l.dn42/irc/zynq/), [webchat](http://webchat.freenode.net?channels=%23%23zynq))
- * [Adam Taylors Microzed Cronicles](http://git.io/vtRGd)
+ * [Adam Taylors Microzed Chronicles](http://git.io/vtRGd)
 
 ## License
 
 - Copyright (c) 2015, Sergiusz 'q3k' Bazański <q3k@q3k.org>
 - Copyright (c) 2015-2016, Steffen 'stv0g' Vogel <stv0g@0l.de>
+- Copyright (c) 2016, Saad 'SaadTiwana' Tiwana
 
 ```
 All rights reserved.
