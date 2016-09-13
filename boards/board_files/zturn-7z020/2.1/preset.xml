@@ -108,7 +108,7 @@
         # Peripheral assignments
         ########################################################################-->
         <user_parameter name="CONFIG.PCW_QSPI_GRP_SINGLE_SS_IO" value="MIO 1 .. 6" />
-        <user_parameter name="CONFIG.PCW_USB0_RESET_IO" value="MIO 7" />
+        <user_parameter name="CONFIG.PCW_USB0_RESET_IO" value="MIO 51" />
         <user_parameter name="CONFIG.PCW_QSPI_GRP_FBCLK_IO" value="MIO 8" />
         <user_parameter name="CONFIG.PCW_UART0_UART0_IO" value="MIO 10 .. 11" />
         <user_parameter name="CONFIG.PCW_I2C0_I2C0_IO" value="EMIO" />
