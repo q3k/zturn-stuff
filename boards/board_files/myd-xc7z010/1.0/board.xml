@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><!--
+################################################################################
+#
+#  MYiR myd-xc7z010 Board Definition File
+#
+#
+################################################################################-->
+
+<board name="myd-xc7z010" schema_version="2.1" vendor="myir.com" display_name="myd-xc7z010" url="http://www.myirtech.com/list.asp?id=529" preset_file="preset.xml">
+	<images>
+		<image name="myd-c7z010-s.jpg" display_name="myd-xc7z010 Board" sub_type="board">
+			<description>myd-xc7z010 Board top image</description>
+		</image>
+	</images>
+	<description>The myd-xc7z010 board is a cheap Zynq evaluation board from the Chinese company MYiR Technologies.</description>
+	<file_version>1.0</file_version>
+	<compatible_board_revisions>
+		<revision id="0">1</revision>
+	</compatible_board_revisions>
+	<components>
+		<component name="part0" display_name="myd-xc7z010 Board" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="http://www.myirtech.com/list.asp?id=502">
+			<description>FPGA part on the board</description>
+			<interfaces>
+				<interface name="ps7_fixedio" mode="master" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset" />
+			</interfaces>
+		</component>
+		<component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group="" />
+	</components>
+	<jtag_chains>
+		<jtag_chain name="chain1">
+			<position name="0" component="part0" />
+		</jtag_chain>
+	</jtag_chains>
+        <connections>
+	</connections>
+</board>
