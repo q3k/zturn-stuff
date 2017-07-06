@@ -111,7 +111,7 @@ set_property -dict [ list \
 ############################################################################
 set_property -dict [ list \
 	CONFIG.PCW_QSPI_GRP_SINGLE_SS_IO {MIO 1 .. 6} \
-	CONFIG.PCW_USB0_RESET_IO {MIO 7} \
+	CONFIG.PCW_USB0_RESET_IO {MIO 51} \
 	CONFIG.PCW_QSPI_GRP_FBCLK_IO {MIO 8} \
 	CONFIG.PCW_UART0_UART0_IO {MIO 10 .. 11} \
     CONFIG.PCW_I2C0_I2C0_IO EMIO \
